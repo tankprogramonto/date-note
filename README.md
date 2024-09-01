@@ -1,4 +1,4 @@
-# date-note
+# Date-note
 arch usinng
 
 ## Todo 

@@ -1,18 +1,20 @@
 
 
 
+# Network   
 
--wifi connection
+## wifi connection
 nmtui
 
-git proxy
+## git proxy    
+
 ```
 git config --global http.proxy http://127.0.0.1:yourprot (use clash)
 ```
 # Auto mount and symbolic link
 
 ## systemctl
-build H.mount on /etc/systemd/system
+build H.mount on /etc/systemd/system    
 ```H.mount
 [Unit]
 Description=My Disk Mount
@@ -25,7 +27,7 @@ Type=btrfs
 [Install]
 WantedBy=multi-user.target
 ```
-find device's UUID
+find device's UUID  
 '''
 sudo blkid
 '''
@@ -40,3 +42,4 @@ sudo systemctl restart H.mount
 tips: same name 
 ```
 ln -s /H /Desktop/H
+```

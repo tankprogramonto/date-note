@@ -14,7 +14,7 @@ git config --global http.proxy http://127.0.0.1:yourprot (use clash)
 # Auto mount and symbolic link
 
 ## systemctl
-build H.mount on /etc/systemd/system    
+Build H.mount on /etc/systemd/system 
 ```H.mount
 [Unit]
 Description=My Disk Mount
@@ -27,19 +27,19 @@ Type=btrfs
 [Install]
 WantedBy=multi-user.target
 ```
-find device's UUID  
-'''
+Find device's UUID 
+```
 sudo blkid
-'''
+```
 
-enable and restart systemctl service 
+Enable and restart systemctl service 
 ```
 sudo systemctl enable H.mount 
 sudo systemctl restart H.mount
 ```
 
 ## symbol link
-tips: same name 
+Tips: set same name 
 ```
 ln -s /H /Desktop/H
 ```

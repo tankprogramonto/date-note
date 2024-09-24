@@ -38,7 +38,7 @@ sudo systemctl enable H.mount
 sudo systemctl restart H.mount
 ```
 
-## symbol link
+## flexible link
 Tips: set same name 
 ```
 ln -s /H /Desktop/H

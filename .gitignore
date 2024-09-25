@@ -21,6 +21,6 @@ rad.json
 #Test results file
 TestResults.xml
 #.backup
-*.back
+*.backup
 #d 
 *film/

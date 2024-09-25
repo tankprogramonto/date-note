@@ -57,7 +57,7 @@ ssh-keygen -t rsa -b 4096 -C "github@github.com"
 ``` 
 
 本地提交失败：之前git clone了一个库，在github线上编辑提交了几次，电脑端编辑的内容无法提交，提示（hint）本地落后于线上
-git fetch origin
+git fetch origin 
 git pull orgin main 
 
 

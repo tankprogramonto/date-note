@@ -50,8 +50,7 @@ test
 ssh -T git@github.com
 ``` 
 
-## Add new ssh keys
-### get ssh keys and put .pub to github
+### get new ssh keys and put .pub to github
 ```
 ssh-keygen -t rsa -b 4096 -C "github@github.com" 
 

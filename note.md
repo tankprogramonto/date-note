@@ -44,5 +44,20 @@ Tips: set same name
 ln -s /H /Desktop/H
 ```
 
-# 
+# ssh
+test 
+```
+ssh -T git@github.com
+``` 
+
+## Add new ssh keys
+### get ssh keys and put .pub to github
+```
+ssh-keygen -t rsa -b 4096 -C "github@github.com" 
+
+``` 
+
+
+
+
 

@@ -4,7 +4,7 @@ arch usinng
 ## Todo 
 在arch学习blender,krita  
 - arch基本安装(分区,配置) do
-    - 尝试[arch coontainer]( ./docker)<++> ,[docker](./docker)
+    - 尝试[arch coontainer](./docker.md),[docker](./docker.md)
 - git config 
 - 安装dwm(shell,kitty,fcitx,proxy)
 - wacom驱动 done  

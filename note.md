@@ -88,7 +88,7 @@ docker info
 
 # China fonts
 ## fonts displayed error in Pureref software
-- waiting for its new version, [can't slove it temporarily](https://www.pureref.com/forum/read.php?5,3610,3633)
+- waiting for its new version, [can't slove it temporarily](https://www.pureref.com/forum/read.php?5,3510,3633)
 
 - Download of the Win version of PureRef.Appimage and run it with wine
 ```

@@ -9,7 +9,7 @@ nmtui
 ## git proxy    
 
 ```
-git config --global http.proxy http://127.0.0.1:yourprot (use clash)
+git config --global http.proxy http://127.0.0.1:yourport (use clash)
 ```
 # Auto mount and symbolic link
 
@@ -61,8 +61,39 @@ ssh-keygen -t rsa -b 4096 -C "github@github.com"
 git fetch origin 
 git pull orgin main 
 
+## docker proxy 
+- config docker service 
+    where is docker.service
+```
+sudo systemctl status docker 
 
+```
 
+- add the proxy configuration in 'Service' module and Restart service
+```
+[Service]
+Environment="HTTP_PROXY=http://direction:port" # 
+Environment="HTTPS_PROXY=http://direction:port" # 
+```
+```
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+docker info
+```
+
+- test 
+```
+docker info
+```
+
+# China fonts
+## fonts displayed error in Pureref software
+- waiting for its new version, [can't slove it temporarily](https://www.pureref.com/forum/read.php?5,3610,3633)
+
+- Download of the Win version of PureRef.Appimage and run it with wine
+```
+nohup wine PureRef.Appimage &
+```
 
 
 

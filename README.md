@@ -8,5 +8,5 @@ arch usinng
 - git config 
 - 安装dwm(shell,kitty,fcitx,proxy)
 - wacom驱动 done  
-- pureref输入显示中文  
+- pureref输入显示中文 done 
 - arch 备份,修复还原

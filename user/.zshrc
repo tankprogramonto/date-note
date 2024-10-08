@@ -1,21 +1,9 @@
 source ~/.config/zsh/zshrc
 
-
-
-
 #source ~/.config/omz/omz.zsh
 # 
 eval "$(starship init zsh)" 
 # zip -q -r  
-alias gaa="git add" 
-alias gst="git status"
-alias c=clear
-alias nvi="nvim"
-alias notes="nvim $HOME/Desktop/note.md"
-alias lg='lazygit'
-alias sudo='shudo -E'
-alias mpv='mpv --geometry=12800x700'
-#alias pureref="cd ~/App/ && ./PureRef-2.0.2_x64.Appimage"
 
 #
 ##yzai
@@ -34,10 +22,11 @@ function zip(){
 
 }
 
+
 ##dairy note
 function generate_and_open_daily_note() {
     today=$(date +%Y-%m-%d)
-    file_path="$HOME/Desktop/$today.md"
+    file_path="$HOME/Desktop/note.$today.md"
     if [ -f "$file_path" ]; then
         nvim "$file_path"
     else
@@ -85,8 +74,7 @@ _killall_processes(){
 
 # terminal_auto_proxy
 function proxy_on() {
-  export http_proxy=http://"127.0.0.1:7897"
-	export https_proxy=$http_proxy
+	export https_proxy="127.0.0.1:7897"
 	echo -e "terminal proxy is enabled"
 }
 
@@ -97,8 +85,14 @@ function proxy_off(){
 
 # wine 
 function w_pure(){
-	nohup ~/App/PureRef-2.0.3_x64.Appimage & 
+	nohup wine $HOME/App/PureRef-2.0.3_x64/PureRef.exe & 
 }
+
+function wechat(){
+	nohup $HOME/App/WeChat-1.0.0.241-x86_64.AppImage &
+}
+
+
 					
 #custom alias
 alias gaa="git add" 
@@ -110,3 +104,4 @@ alias lg='lazygit'
 alias sudo='sudo -E'
 alias mpv='mpv --geometry=12800x700'
 alias dnote=generate_and_open_daily_note
+alias pureref="cd $HOME/App/ && nohup ./PureRef-2.0.2_x64.Appimage"

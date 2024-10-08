@@ -48,11 +48,9 @@ extract = [
   { run = 'unar "$1"', orphan = true, desc = "Extract here", for = "unix" },
 ]
 play = [
-  { run = 'blender "$@"', orphan = true, for = "unix" },
   { run = 'mpv --force-window "$@"', orphan = true, for = "unix" },
   { run = 'mpv --force-window "%1"', orphan = true, for = "windows" },
   { run = '''mediainfo "$1"; echo "Press enter to exit"; read _''', block = true, desc = "Show media info", for = "unix" },
-
 ]
 image = [
   { run = 'ristretto "$@"',  desc = "ImageOpen", for = "linux" },
@@ -60,17 +58,9 @@ image = [
 pdf = [
   { run = 'sioyek "$@"',  desc = "PdfRead", for = "linux" },
 ]
-run = [
 
-  { run = 'blender "$@"', orphan = true, for = "unix" },
-  { run = 'krita "$@"', desc = "PdfRead", for = "linux" },
-]
 [open]
 rules = [
- { name = "*.blend", use = ["play","reveal"] },
- { name = "*.kra", use = ["extract","reveal"] },
-#  { mime = "application/blender",             use = ["open"] },
-
   { name = "*/", use = [ "edit", "open", "reveal" ] },
 
   { mime = "text/*",          use = [ "edit", "reveal" ] },
@@ -87,7 +77,7 @@ rules = [
   { mime = "application/x-tar",           use = ["extract"] },
   { mime = "application/x-7z-compressed", use = ["extract"] },
   { mime = "application/x-rar",           use = ["extract"] },
- 
+
   { mime = "application/json", use = [ "edit", "reveal" ] },
   { mime = "*/javascript",     use = [ "edit", "reveal" ] },
 

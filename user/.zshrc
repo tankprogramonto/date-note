@@ -1,6 +1,6 @@
-source ~/.config/zsh/zshrc
+#source ~/.config/zsh/zshrc
 
-#source ~/.config/omz/omz.zsh
+source ~/.config/omz/omz.zsh
 # 
 eval "$(starship init zsh)" 
 # zip -q -r  

@@ -90,6 +90,12 @@ docker info
 ## fonts displayed error in Pureref software
 - waiting for its new version, [can't slove it temporarily](https://www.pureref.com/forum/read.php?5,3510,3633)
 
+  # conneting phone with thunar filemanager
+  ```
+  yay -S libmtp mtpfs
+  ```
+  
+
 - Download of the Win version of PureRef.Appimage and run it with wine
 ```
 nohup wine PureRef.Appimage &

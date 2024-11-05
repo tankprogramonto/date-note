@@ -102,5 +102,5 @@ nohup wine PureRef.Appimage &
   yay -S libmtp mtpfs
   ```
   
-
-
+# thunder previews adds-on
+yay -S ffmpegthumbnailer poppler-glib webp-pixbuf-loader floderpreview f3d 

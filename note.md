@@ -104,3 +104,7 @@ nohup wine PureRef.Appimage &
   
 # thunder previews adds-on
 yay -S ffmpegthumbnailer poppler-glib webp-pixbuf-loader floderpreview f3d 
+
+
+# Terminal custionization 
+
